@@ -1,0 +1,51 @@
+<section class="blk-pv" id="prova">
+  <div class="wrap blk-pv__grade">
+    <figure class="blk-pv__foto" data-reveal>
+      <!--foto:midia/f05.jpg|Equipe da ACT ao nascer do sol, ao lado das macas montadas para atender corredores numa prova-->
+      <figcaption>Macas montadas antes da largada.</figcaption>
+    </figure>
+    <div>
+      <div class="blk-pv__cab" data-reveal>
+        <p class="blk-pv__eyebrow">Uma comunidade em movimento</p>
+        <h2 class="blk-pv__titulo">A ACT também vai até a prova</h2>
+        <p class="blk-pv__lead" data-acende>A equipe monta tenda em corridas, provas de ciclismo e eventos de crossfit de Goiânia. O cuidado começa semanas antes da largada e continua depois da chegada.</p>
+      </div>
+      <ol class="blk-pv__linha">
+        <li data-reveal style="--d:0ms">
+          <span class="blk-pv__icone"><!--icone:agenda--></span>
+          <div><h3>Semanas antes</h3><p>Bikefit, ajuste da rotina de treino e tratamento da dor que apareceu no meio do ciclo.</p></div>
+        </li>
+        <li data-reveal style="--d:90ms">
+          <span class="blk-pv__icone"><!--icone:mao--></span>
+          <div><h3>No dia</h3><p>Liberação e preparo na tenda da ACT, perto da largada.</p></div>
+        </li>
+        <li data-reveal style="--d:180ms">
+          <span class="blk-pv__icone"><!--icone:gota--></span>
+          <div><h3>Depois da chegada</h3><p>Recovery com botas de compressão e gelo, para voltar a treinar sem carregar a prova no corpo.</p></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<style>
+.blk-pv{padding-block:var(--sp-section);background:color-mix(in srgb,var(--pulse) 7%,var(--bg))}
+.blk-pv__grade{display:grid;gap:var(--sp-5)}
+.blk-pv__foto{margin:0;position:relative}
+.blk-pv__foto img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.blk-pv__foto figcaption{margin-top:var(--sp-2);font-size:var(--t-label);letter-spacing:.04em;color:color-mix(in srgb,var(--ink) 60%,transparent)}
+.blk-pv__eyebrow{margin:0 0 var(--sp-2);font-family:var(--f-body);font-size:var(--t-label);letter-spacing:var(--eyebrow-track);text-transform:uppercase;color:var(--pulse)}
+.blk-pv__titulo{margin:0;font-family:var(--f-display);font-size:var(--t-h2);line-height:var(--lh-display);text-wrap:balance;color:var(--ink)}
+.blk-pv__lead{margin:var(--sp-3) 0 0;color:color-mix(in srgb,var(--ink) 72%,transparent)}
+.blk-pv__linha{list-style:none;margin:var(--sp-5) 0 0;padding:0;display:grid;gap:var(--sp-3);position:relative}
+.blk-pv__linha::before{content:"";position:absolute;left:1.375rem;top:1.4rem;bottom:1.4rem;width:2px;background:color-mix(in srgb,var(--pulse) 35%,transparent)}
+.blk-pv__linha li{position:relative;display:flex;gap:var(--sp-3);align-items:flex-start;padding:var(--sp-3);padding-left:0}
+.blk-pv__icone{flex:none;display:inline-flex;width:2.75rem;height:2.75rem;align-items:center;justify-content:center;border-radius:50%;background:var(--brand);color:var(--bg);position:relative}
+.blk-pv__icone svg{width:1.3rem;height:1.3rem}
+.blk-pv__linha h3{margin:0 0 .3rem;font-family:var(--f-display);font-size:1.35rem;line-height:1.15;color:var(--ink)}
+.blk-pv__linha p{margin:0;color:color-mix(in srgb,var(--ink) 75%,transparent)}
+@media (min-width:900px){
+  .blk-pv__grade{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:var(--sp-6,4rem)}
+  .blk-pv__foto img{aspect-ratio:3/4}
+}
+</style>
